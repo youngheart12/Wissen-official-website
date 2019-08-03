@@ -1,0 +1,45 @@
+.navbar-light
+{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.navbar-light .navbar-nav .nav-link {
+    color:black;
+    font-size: 18px;     
+}
+.navbar-light .navbar-brand
+{
+    color:black;
+    font-weight: 700;
+  
+
+}
+.i-circle {
+  background: #ff0000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+/* coollink */
+
+ .coollink .nav-link:hover {
+    opacity: 1;
+  }
+.coollink .nav-link::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color:black;
+  }
+  
+ .coollink .nav-link::before {
+    width: 0%;
+    bottom: 10px;
+  }
+  
+.coollink .nav-link:hover::before {
+    width:6%;
+  }
+ 

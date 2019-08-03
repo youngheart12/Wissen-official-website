@@ -1,0 +1,40 @@
+.banner
+{
+    background-image: url('../../Images/time.jpg');
+   width: 100%;
+   height: 100vh;
+   text-align: center;
+   background-repeat: no-repeat;
+   background-position-x: 640px;
+   background-position-y: 170px;
+   overflow: hidden;
+   
+}
+
+#sameTimer
+{
+    padding: 25px;
+    margin-right: 10px;
+    width: 150px;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    text-align: center
+}
+#sameTimer:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.dayTimer,.hourTimer,.secondTimer,.minuteTimer{
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.typeposs
+{
+    position: relative;
+    top: 60px;
+    left: 100px;
+    text-align: left;
+   border: 10px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    
+}

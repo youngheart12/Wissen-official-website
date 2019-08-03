@@ -1,0 +1,4 @@
+{
+    "mongodbURL":"mongodb+srv://ydhash12:Indianarmy@123@cluster0-yhuu2.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret":"mylifemyrules"
+}

@@ -1,0 +1,71 @@
+.contactForm
+{
+ background-image: url("../../Images/contactus1.jpg"); 
+   width: 100vw;
+    height: 550px;
+    color:black;
+    padding-left: 50px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: 600px 110px;
+    margin-top: 20px;
+    position: absolute;
+    display: inline-block;
+    overflow-x: hidden;
+    
+}
+
+#samework
+{
+    border:none;
+    border: 1px solid black;
+}
+
+.Contactform
+{
+    position: relative;
+    top: 180px;
+    left: 120px;
+}
+.yourCall
+{
+    font-size: 50px;
+}
+.yourCall:hover
+{
+color:#4a148c;
+}
+.location
+{
+    position: relative;
+    top:260px;
+    width: 100%;
+}
+.locationLeft
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 350px;
+    padding-top: 120px;
+}
+.locationRight
+{
+    background-color: #466368;
+    color: white;
+    height: 350px;
+}
+.location .fas
+{
+    font-size: 80px;
+}
+.myMap
+{
+    width: 640px;
+    height: 350px;
+    float: right;
+}
+.headOffice
+{
+    padding-top: 75px;
+}
