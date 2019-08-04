@@ -50,8 +50,8 @@ import {
                 <NavLink  href="/Joinus"><i className="fas fa-user-shield"></i> Join Us</NavLink>
               </NavItem>
               <NavItem className="coollink">
-                {/* <NavLink  href="/Login"><i className="fas fa-lock-open"></i> Login</NavLink> */}
-              <Login/>
+                <NavLink  href="/Login"><i className="fas fa-lock-open"></i> Login</NavLink> 
+              
               </NavItem>
              
             </Nav>

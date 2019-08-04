@@ -61,6 +61,7 @@ export const register = ({ name, email, password }) => dispatch => {
         type: REGISTER_FAIL
       });
     });
+    
 };
 
 // Login User

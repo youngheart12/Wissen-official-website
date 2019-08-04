@@ -42,4 +42,10 @@
 .coollink .nav-link:hover::before {
     width:6%;
   }
- 
+  #dropstable{
+    font-family: 'Poppins', sans-serif;
+    color: #009688
+  }
+ #dropitem{
+   width: 80px;
+ }

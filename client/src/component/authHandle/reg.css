@@ -18,7 +18,7 @@
 {
     font-family: 'Poppins', sans-serif;
 }
-input[type=text]
+.regInsideContainer input[type=text]
 {
     width: 100%;
     border:none;
@@ -29,7 +29,7 @@ input[type=text]
     color: black;
     border-bottom: 1px solid black;
 }
-input[type=password]
+.regInsideContainer input[type=password]
 {
     width: 100%;
     border:none;

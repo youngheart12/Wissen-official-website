@@ -8,6 +8,7 @@ import {
   Nav,
   NavItem,
   NavLink,
+  UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem
   } from 'reactstrap';
   import { logout } from '../../../action/authAction';
   import { connect } from 'react-redux';
@@ -38,7 +39,7 @@ class Example extends React.Component {
   }
   render() {
     const { user } = this.props.auth;
-    var first=user.name.charAt(0)
+    var first=user.name
     return (
       
         <Navbar light expand="md" fixed="top" style={{backgroundColor:"white"}}> 
@@ -59,10 +60,17 @@ class Example extends React.Component {
                 <NavLink  href="/CreateEvent"><i className="fas fa-calendar-alt"></i> Events</NavLink>
               </NavItem>
     
-              <NavItem className="coollink1">
+              {/* <NavItem className="coollink1">
                <NavLink onClick={this.props.logout} href='#'><section style={{boxSizing:"border-box"}}><span class="i-circle">{first}</span> Log Out</section></NavLink>
-              </NavItem>
-            
+              </NavItem> */}
+              <UncontrolledDropdown setActiveFromChild>
+          <DropdownToggle tag="a" className="nav-link" caret id="dropstable">
+          {first}
+          </DropdownToggle>
+          <DropdownMenu>
+            <DropdownItem tag="a" href="#"  onClick={this.props.logout} >Logout</DropdownItem>
+          </DropdownMenu>
+        </UncontrolledDropdown>
              
             </Nav>
           </Collapse>

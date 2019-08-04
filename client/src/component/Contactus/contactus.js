@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import Header from "../Header/header";
+import Header from "../Header/completeHeader";
 import './contactus.css';
 import {Form,Button,Input,Row,Col} from 'reactstrap';
 import{contact} from '../../action/authAction';

@@ -1,0 +1,56 @@
+.loginpage{
+   margin-top: 10%;
+   border-radius: 15px;
+   background-color: black;
+   color: white;
+  
+}
+.makedark{
+    background-color: black;
+}
+.loginpage1{
+    margin-top: 10%;
+    border-radius: 15px;
+    color: white;
+    width: 100%;
+   
+ }
+.mainpart
+{
+    overflow-x: hidden;
+}
+.divblack{
+  
+    box-sizing: border-box;
+    text-align: center;
+
+    border-radius: 50px;
+
+}
+.divblack input[type=password]
+{
+    border: none;
+    padding: 12px;
+}
+.divblack .fas 
+{
+    margin-top: 20px;
+    color: white;
+    font-size: 25px;
+}
+.spanicon
+{
+    background-color: black;
+    text-align: center;
+    border-radius: 50px;;
+}
+
+.mb-3
+{
+    border: none;
+    border-radius: 25px;
+    width: 100%; 
+    margin-top: 15px;
+   
+}
+

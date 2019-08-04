@@ -59,7 +59,6 @@ class Registration extends Component{
     
         // Attempt to register
         this.props.register(newUser);
-        this.props.history.push("/login");
       };
     
     render()
