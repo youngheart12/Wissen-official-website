@@ -25,9 +25,6 @@ class App extends Component {
       <Route path="/contactus" component={Contact}></Route>
       <Route path="/aboutus" component={About}></Route>
       <Route path="/login" component={Login}></Route>
-     {/* <Route path="/Signin" component={SignIn}></Route>
-     
-     <Route path="/CreateEvent" component={createEvent}></Route>  */}
       </Switch>
       </Provider>
   

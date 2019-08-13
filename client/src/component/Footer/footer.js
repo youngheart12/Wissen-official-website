@@ -1,6 +1,6 @@
 import React from 'react';
 import './footer.css';
-import { Jumbotron, Button,Row,Col } from 'reactstrap';
+import { Jumbotron, Button,Row,Col,NavLink } from 'reactstrap';
 
 const Footer = (props) => {
   return (
@@ -11,7 +11,7 @@ const Footer = (props) => {
        <span className="spanheader">Don't be shy - Drop us a line.</span>
        <h5>We are looking forward to speaking with you.</h5>
        <h3 style={{color:"black",textDecoration:"underline"}}>clubwissenedu@gmail.com</h3>
-        <Button color="dark" outline>Submit</Button>
+       <NavLink href="/contactus"><Button color="dark" outline>Submit</Button></NavLink>
         <br></br> <br></br> 
        <h7>&copy; Copyright 2019-2050. All rights reserved to team WISSEN </h7>
         </Col>

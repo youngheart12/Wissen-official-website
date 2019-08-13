@@ -6,6 +6,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { register } from '../../action/authAction';
 import { clearErrors } from '../../action/errorAction';
+import CompleteHeader from '../Header/completeHeader';
 class Registration extends Component{
     state = {
         modal: false,
@@ -30,6 +31,11 @@ class Registration extends Component{
           } else {
             this.setState({ msg: null });
           }
+        }
+        const {history}=this.props;
+        if(isAuthenticated)
+        {
+          history.push('/');
         }
     
         // If authenticated, close modal
@@ -63,9 +69,11 @@ class Registration extends Component{
     
     render()
     {
+      
      
         return(
             <div className="regContainer">
+              <CompleteHeader></CompleteHeader>
                 <div className="regInsideContainer">
                     <h2 className="regHeader">Signup</h2><br></br>
                     <p> {this.state.msg ? (

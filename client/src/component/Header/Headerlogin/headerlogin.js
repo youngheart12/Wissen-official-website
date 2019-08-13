@@ -57,7 +57,7 @@ class Example extends React.Component {
                 <NavLink  href="/contactus"><i className="fas fa-phone"></i> Contact us</NavLink>
               </NavItem>
               <NavItem className="coollink" >
-                <NavLink  href="/CreateEvent"><i className="fas fa-calendar-alt"></i> Events</NavLink>
+                <NavLink  href="/events"><i className="fas fa-calendar-alt"></i> Events</NavLink>
               </NavItem>
     
               {/* <NavItem className="coollink1">
