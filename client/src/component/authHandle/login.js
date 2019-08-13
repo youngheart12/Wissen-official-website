@@ -13,9 +13,11 @@ import {
 import './login.css';
 import { connect } from 'react-redux';
 import {Redirect} from 'react-router-dom';
+import CompleteHeader from '../Header/completeHeader';
 import PropTypes from 'prop-types';
 import { login } from '../../action/authAction';
 import { clearErrors } from '../../action/errorAction';
+import completeHeader from '../Header/completeHeader';
 class Login extends Component{
   state = {
     email: '',
@@ -31,28 +33,18 @@ class Login extends Component{
   componentDidUpdate(prevProps) {
     const { error, isAuthenticated } = this.props;
     if (error !== prevProps.error) {
-      // Check for register error
       if (error.id === 'LOGIN_FAIL') {
         this.setState({ msg: error.msg.msg });
       } else {
         this.setState({ msg: null });
       }
     }
-
-    // If authenticated, close modal
-    // if(isAuthenticated){
-    //   return <Redirect to ="/"></Redirect>
-    // }
+    if(isAuthenticated)
+    {
+      this.props.history.push('/')
+    }
   }
  
-  // toggle = () => {
-  //   // Clear errors
-  //   this.props.clearErrors();
-  //   this.setState({
-  //     modal: !this.state.modal
-  //   });
-  // };
-
   onChange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
@@ -61,7 +53,6 @@ class Login extends Component{
     e.preventDefault();
 
     const { email, password } = this.state;
-    const {history}=this.props;
     const user = {
       email,
       password
@@ -69,7 +60,6 @@ class Login extends Component{
 
     // Attempt to login
     this.props.login(user);
-    history.push('/');
 
   };
 
@@ -77,10 +67,11 @@ class Login extends Component{
   {
     return(
       <div className="mainpart">
+        <CompleteHeader></CompleteHeader>
         <Row >
           
           <Col md={{size:4 ,offset:2}} className="loginpage1">
-      <img src={require('../../Images/w4.gif')} alt="gify" style={{width:"500px",borderRadius:"25px"}}></img>
+      <img src={require('../../Images/w4.gif')} alt="gify" style={{width:"525px",borderRadius:"25px"}}></img>
           </Col>
           <Col sm="12" md={{ size: 4}} className="loginpage">
             {/* <Input type="text" placeholder="enter your username"></Input> */}
